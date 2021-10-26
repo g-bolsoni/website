@@ -194,6 +194,7 @@ header, .navbar {
     background-image: url('../Sources/empresa.jpg');
     background-size: cover;
     height: 100%;
+    margin-top: 25px;
 }
 #pattern-img h4, 
 #pattern-img p{
@@ -249,4 +250,79 @@ header, .navbar {
     display: none;
 }
 /* Nossos Projetos */
+/* Newsletter */
+#news-area{
+	text-align: center;
+	background-color: #f9f9f9;
+	
+}
+
+#news-area p {
+	font-size: 19px;
+	margin-bottom: 40px;
+}
+#email-input{
+	border-radius: unset;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border: 1px solif #65daf9;
+	display: inline;
+	box-sizing: border-box;
+	width: 40%;
+	height: 40px;
+}
+#news_btn{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border: 1px solid #65daf9;
+	background-color: #65daf9;
+	text-transform: uppercase;
+	color: #fff;
+	height: 40px;
+	padding: 0 30px;
+	margin-left: -130px;
+	position: absolute;
+	transition: all .3s ease-in-out;
+}
+#news_btn:hover{
+	background-color: #fff;
+	color: #65daf9;
+}
+.form-control:focus{
+	box-shadow: unset !important;
+}
+/* Newsletter */
+/* Orçamento */
+#call-area{
+	background: #65daf9;
+	text-transform: uppercase;
+}
+#call-area .container{
+	padding: 40px 100px;
+}
+#call-area .row {
+	display: block;
+	text-align: center;
+}
+#call-area p {
+	color: #fff;
+	font-weight: 900;
+	font-size: 19px;
+	width: auto;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+	display: inline;
+	height: 60px;
+	line-height: 60px;
+}
+#call-area #call-btn{
+	background-color: #fff;
+	color: #65daf9;
+	font-weight: 900;
+	font-size: 20px;
+	margin-left: 30px;
+	width: auto;
+	letter-spacing: 2px;
+}
+/* Orçamento */
 /*MAIN*/
