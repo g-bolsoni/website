@@ -172,5 +172,81 @@ header, .navbar {
     margin-top: 20px;
 }
 /* Dados da empresa */
+/*Team*/
+.card-body{
+    text-align: center;
+}
+/*Team*/
+/*Trabalhe conosco*/
+#apply-area{
+    height: 500px;
+}
+#apply-area .container-fluid,
+#apply-area .row{
+    height: 100%;
+}
+#apply-area .apply-box{
+    text-align: center;
+    padding: 80px 50px;
 
+}
+#company-img{
+    background-image: url('../Sources/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}
+#pattern-img h4, 
+#pattern-img p{
+    color: #FFF;
+} 
+#pattern-img h4{
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#pattern-img p{
+    margin-bottom: 20px;
+}
+#apply-btn{
+    display: block;
+    height: auto;
+    width: 180px;
+    margin: 30px auto 0 ;
+    background: transparent;
+    border-color: #fff;
+    transition: all .5s ease-in-out;
+}
+#apply-btn:hover{
+    border-color: #65daf9;
+    background: #65daf9;
+}
+/*Trabalhe conosco*/
+/* Nossos Projetos */
+.project-box{
+    margin-bottom: 30px;
+}
+#filter-btn-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#portifolio_area .filter-btn{
+    color: #444;
+    border: 1px solid  #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+#portifolio_area .filter-btn.active,#portifolio_area .filter-btn:hover{
+    color: #fff;
+    background-color: #65daf9;
+    border-color:#65daf9 ;
+}
+.project-box.fadeOut{
+    display: none;
+}
+/* Nossos Projetos */
 /*MAIN*/

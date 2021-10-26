@@ -72,7 +72,7 @@ $(document).ready(function(){
     console.log('dataAreaOffSet ' + dataAreaOffSet);
     $(window).scroll(function(e){
         let scroll = window.scrollY;
-        console.log('scroll '+ scroll)
+        // console.log('scroll '+ scroll)   
         if ((scroll > (dataAreaOffSet + 1000)) && stop == 0) {
             circleA.animate(1.0);
             circleB.animate(1.0);
@@ -86,5 +86,47 @@ $(document).ready(function(){
     /*Paralax*/
     setTimeout(() => {
         $('#data-area').parallax({imageSrc: 'Sources/cidadeparallax.png'});
+        $('#apply-area').parallax({imageSrc: 'Sources/pattern.png'});
     }, 300);    
+
+    /*Filter */
+    $('.filter-btn').on('click',function(){
+        let type =  $(this).attr('id');
+        let boxes = $('.project-box');
+
+        $('.main-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        if(type == 'dsg-btn'){
+        	eachBoxes('dsg',boxes )
+        }
+        if(type == 'dev-btn'){
+        	eachBoxes('dev',boxes )
+        }
+        if(type == 'seo-btn'){
+        	eachBoxes('seo',boxes )
+        }
+        if(type == 'all-btn'){
+        	eachBoxes('all',boxes )
+        }
+    });
+    
+function eachBoxes(type,boxes){
+	if(type=='all'){
+		$(boxes).addClass('fadeIn');
+        $(boxes).removeClass('fadeOut');
+	}else {
+		$(boxes).each(function(){
+			if(!$(this).hasClass(type)){
+                $(this).removeClass('fadeIn');
+				$(this).addClass('fadeOut');
+			}else{
+                $(this).removeClass('fadeOut');
+				$(this).addClass('fadeIn');
+			}
+		});
+	}
+	
+}
+    /*Filter */
 })
