@@ -129,4 +129,83 @@ function eachBoxes(type,boxes){
 	
 }
     /*Filter */
-})
+    /* animation Scroll*/
+    let navBtn =  $('.nav-item');
+    
+    let bannerSection = $('#mainSlider')
+    let aboutSection = $('#about-area');
+    let servicesSection = $('#service-area');
+    let teamSection = $('#team-area');
+    let portifolioSection = $('#portifolio_area');
+    let contactSection = $('#call-area');
+    
+    
+    $(navBtn).on('click',function(){
+        let scrollTo = 0;
+        let btnId = $(this).attr('id');
+        switch (btnId) {      
+            case ('mainSlider'):
+                console.log('bannerSection '+ scrollTo);
+                scrollTo = bannerSection;
+                break;
+            case ('about-menu'):
+                console.log('aboutSection '+ scrollTo);
+                scrollTo = aboutSection;
+                break;
+            case ('services-menu'):
+                console.log('servicesSection '+ scrollTo);                
+                scrollTo = servicesSection;
+                break;
+            case ('team-area'):
+                console.log('teamSection '+ scrollTo); 
+                scrollTo = teamSection;
+                break;
+            case ('portifolio_area'):
+                console.log('portifolioSection '+ scrollTo); 
+                scrollTo = portifolioSection;
+                break;
+            case ('team-area'):
+                console.log('servicteamSectionesSection '+ scrollTo); 
+                scrollTo = teamSection;
+                break;    
+            case ('call-area'):
+                console.log('contactSection '+ scrollTo); 
+                scrollTo = contactSection;
+                break;
+            default:
+                break;
+
+        }
+            $([document.documentElement,document.body]).animate({
+                scrollTop : $(scrollTo).offset().top - 70
+            },1500);
+       
+    });
+      /*
+        if(btnId == "about-menu" ){
+            scrollTo = aboutSection;
+        }
+        if(btnId == "services-menu" ){
+            scrollTo = servicesSection;
+        }
+        if(btnId == "team-area" ){
+            scrollTo = teamSection;
+        } 
+        if(btnId == "portifolio_area" ){
+            scrollTo = portifolioSection;
+        } 
+        if(btnId == "call-area" ){
+            scrollTo = contactSection;
+        }
+        if(btnId == "mainSlider"){
+            scrollTo = bannerSection
+        }
+
+
+
+        */
+
+
+    /* animation Scroll*/
+
+});
